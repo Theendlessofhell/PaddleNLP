@@ -127,7 +127,7 @@ def main():
     training_args.print_config(gen_args, "Generation")
 
     # Setup GPU & distributed training
-    paddle.set_device(training_args.device)
+    #paddle.set_device(training_args.device)
     set_seed(seed=training_args.seed)
     logger.warning(
         f"Process rank: {training_args.local_rank}, device: {training_args.device}, world_size: {training_args.world_size}, "
